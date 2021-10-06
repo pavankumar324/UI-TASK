@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" 
+  href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+  <script type="text/javascript" 
+  src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" 
+  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
+
+</head>
+<body>
+<fieldset>
+<div>
+    Master order id <br/>
+    <input type="text" name="Master orderid">  </span>
+  Distributor 
+    <input type="text" name="Distributor"> </span>
+ Status 
+ <select name="Status" id="All">
+    <option value="All">All</option>
+    <option value="NEW">NEW</option>
+    <option value="Delivered">Delivered</option>
+  </select>
+</div>   <br/>
+
+Date Range
+<input type="text" name="daterange" value="2021-05-01 00:00:00-2021-07-28 19:12:00">
+
+<button class="btn-primary" type="button" name="FILTER">FILTER</button>
+
+<button class="btn-primary" type="button" name="RESET">RESET</button>
+</fieldset> <br>
+    <table id="dt-vertical-scroll" class="table" cellspacing="0" width="100%">
+        <thead style="background-color:rgb(71, 218, 238);">
+          <tr style="color: white;">
+            <th class="th-sm">S.NO 
+            </th>
+            <th class="th-sm">Master Order 
+            </th>
+            <th class="th-sm">Status
+            </th>
+            <th class="th-sm">Distributor
+            </th>
+            <th class="th-sm">Place on 
+            </th>
+            <th class="th-sm">No of items  
+            </th>
+            <th class="th-sm">Total
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>180</td>
+            <td>Delivered</td>
+            <td>patwari Distributor</td>
+            <td>9 july 2021, 3:10 p.m,</td>
+            <td>2</td>
+            <td>₹10,000.00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>178</td>
+            <td>Delivered</td>
+            <td>patwari Pharma</td>
+            <td>30 jun 2021, 5:14 p.m,</td>
+            <td>4</td>
+            <td>₹10,000.00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>177</td>
+            <td>Delivered</td>
+            <td>Adsdfweased</td>
+            <td>30 jun 2021, 12:06 p.m,</td>
+            <td>1</td>
+            <td>₹10,000.00</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>176</td>
+            <td>New</td>
+            <td>Sun Pharma</td>
+            <td>30 jun 2021, 11:56 a.m,</td>
+            <td>1</td>
+            <td>₹0.00</td>
+          </tr>
+          <tr>
+      
+            <td>5</td>
+            <td>167</td>
+            <td>New</td>
+            <td>Harsha Distributor</td>
+            <td>23 jun 2021, 12:15 p.m,</td>
+            <td>11</td>
+            <td>₹0.00</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>162</td>
+            <td>New</td>
+            <td>Sun Pharma</td>
+            <td>21 jun 2021, 12:32 p.m,</td>
+            <td>1</td>
+            <td>₹0.00</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>161</td>
+            <td>New</td>
+            <td>Sun Pharma</td>
+            <td>21 jun 2021, 12:31 p.m,</td>
+            <td>1</td>
+            <td>₹0.00</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>160</td>
+            <td>Delivered</td>
+            <td>sungfsda</td>
+            <td>21 jun 2021, 11:52 a.m,</td>
+            <td>1</td>
+            <td>₹4,661.37</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>159</td>
+            <td>NEW</td>
+            <td>Gfytr65h</td>
+            <td>21 jun 2021, 11:45 a.m,</td>
+            <td>1</td>
+            <td>₹0.00</td>
+          </tr>
+          
+        </tbody>
+    </table>
+
+<div class="card">
+<h2>MasterOrder ID:176</h2>
+<table id="dt-vertical-scroll" class="table" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">ordered Date :
+        </th>
+        <th class="th-sm">order Status :
+        </th>
+        <th class="th-sm">Placed by :
+        </th>
+        <th class="th-sm">Distributor :
+        </th>
+        <th class="th-sm">invoice Number :
+        </th>
+        <th class="th-sm"> GST Number : 
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+    <tr> 
+              <td>30 jun 2021, 11:56 a.m,</td>
+              <td>NEW</td>
+              <td></td>
+              <td>Sun Pharma</td>
+              <td>yurt6yt5454</td>
+              <td>36AFZPM1559A1Z7</td>
+
+       </tr>
+       </tbody>
+       <thead>
+    <tr>
+          <th class="th-sm">Sub Total :
+          </th>
+          <th class="th-sm">Discount :
+          </th>
+          <th class="th-sm"> GST(%) :
+          </th>
+          <th class="th-sm"> Total Amount:
+    </th>
+    </thead>
+    <tbody>
+        <tr> 
+                  <td>₹0.00</td>
+                  <td>₹0.00</td>
+                  <td></td>
+                  <td>₹0.00</td>
+         </tr>
+ </tbody>
+           <table id="dt-vertical-scroll" class="table" cellspacing="0" width="100%">
+            <thead style="background-color:rgb(71, 218, 238);">
+              <tr style="color: white;">
+                <th class="th-sm">S.NO 
+                </th>
+                <th class="th-sm">Product Name  
+                </th>
+                <th class="th-sm">Packing 
+                </th>
+                <th class="th-sm">price 
+                </th>
+                <th class="th-sm">Quantity
+                </th>
+                <th class="th-sm">B.Qty 
+                </th>
+                <th class="th-sm">B.Free 
+                </th>
+                <th class="th-sm">Total
+                </th>
+               <th class="th-sm">info
+
+               </th>
+            </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>URIMAX 0.2 MG</td>
+                <td>1*15</td>
+                <td>₹100.47</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>0.0</td>
+                <td>₹1,004.70</td>
+                <td> i </td>
+              </tr>          
+              
+              <tr>
+                <td style="color:blueviolet">CANCLE ORDER</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="color: blueviolet;">PROCESS ORDER</td>
+                <td style="color: blueviolet;">Fill-Bill Details</td>
+              </tr>          
+</table>
+</div>
+
+<fieldset>
+<h1>Fill Bill Details</h1>
+<table id="dt-vertical-scroll" class="table" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">1. Product Name 
+        </th>
+        <th class="th-sm">Matching Products 
+        </th>
+        <th class="th-sm">Bill Quantity 
+        </th>
+        <th class="th-sm">Billed Free
+        </th>
+        <th class="th-sm">Batch 
+        </th>
+        <th class="th-sm">Expiry
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="Allery" placeholder="Allergy"></td>
+                <td><select name="Matching Products" id="select">
+                    <option value="select">select</option>
+                    <option value="Dolo650">'Dolo 650':70219</option>
+                    <option value="Delivered">'Dolo 50MG TABS':232578</option>
+                  </select> </td>
+                <td><input type="text" name="Billed Quantity" value="24.0"></td>
+                <td><input type="text" name="Billed Free" value="3.0"></td>
+                <td><input type="text" name="Batch" value="X739XXA"></td>
+                <td><input type="text" name="Expiry" value="12/15/2020"></td>
+              </tr>                 
+
+              <tr>
+                <th class="th-sm">Hsncode 
+                </th>
+                <th class="th-sm">unit Price 
+                </th>
+                <th class="th-sm">Max Retail Price  
+                </th>
+                <th class="th-sm">PTS
+                </th>
+                <th class="th-sm">CGST
+                </th>
+                <th class="th-sm">SGST
+                </th>
+                </tr>
+         
+                <tr>
+                    <td><input type="text" name="Hsncode" value="9039"></td>
+                    <td><input type="text" name="unitprice" value="595.03"></td>
+                    <td><input type="text" name="MaxRetailPrice" value="445.00"></td>
+                    <td><input type="text" name="PTS" value="2.00"></td>
+                    <td><input type="text" name="CGST" value="14.00"></td>
+                    <td><input type="text" name="SGST" value="13.00"></td>
+                  </tr>
+                <tr>
+                     <th class="th-sm">IGST
+                </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="IGST" value="12.00">   
+                    </td>
+                </tr>
+        </tbody>
+        </table>
+</fieldset>
+<fieldset>
+    <table id="dt-vertical-scroll" class="table" cellspacing="0" width="100%">
+        <thead>
+          <tr>
+            <th class="th-sm">2. Product Name 
+            </th>
+            <th class="th-sm">Matching Products 
+            </th>
+            <th class="th-sm">Bill Quantity 
+            </th>
+            <th class="th-sm">Billed Free
+            </th>
+            <th class="th-sm">Batch 
+            </th>
+            <th class="th-sm">Expiry
+            </th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="amlodipine besylate" placeholder="amlodipine besylate"></td>
+                    <td><select name="Matching Products" id="select">
+                        <option value="select">select</option>
+                        <option value="Dolo650">'TRAMADOL 50':70219</option>
+                        <option value="Delivered">'TRAMADOL 50MG TABS':232578</option>
+                        <option value="Delivered">'TRAMADOL HCL 100MG INJ':232759</option>
+
+                      </select> </td>
+                    <td><input type="text" name="Billed Quantity" value="5.0"></td>
+                    <td><input type="text" name="Billed Free" value="4.0"></td>
+                    <td><input type="text" name="Batch" value="S62643"></td>
+                    <td><input type="text" name="Expiry" value="2/16/2021"></td>
+                  </tr>                 
+    
+                  <tr>
+                    <th class="th-sm">Hsncode 
+                    </th>
+                    <th class="th-sm">unit Price 
+                    </th>
+                    <th class="th-sm">Max Retail Price  
+                    </th>
+                    <th class="th-sm">PTS
+                    </th>
+                    <th class="th-sm">CGST
+                    </th>
+                    <th class="th-sm">SGST
+                    </th>
+                    </tr>
+             
+                    <tr>
+                        <td><input type="text" name="Hsncode" value="9649"></td>
+                        <td><input type="text" name="unitprice" value="645.82"></td>
+                        <td><input type="text" name="MaxRetailPrice" value="767.00"></td>
+                        <td><input type="text" name="PTS" value="14.00"></td>
+                        <td><input type="text" name="CGST" value="9.00"></td>
+                        <td><input type="text" name="SGST" value="12.00"></td>
+                      </tr>
+                    <tr>
+                         <th class="th-sm">IGST
+                    </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="IGST" value="2.00">   
+                        </td>
+                    </tr>
+            </tbody>
+            </table>
+</fieldset>
+
+
+</body>
+</html>
